@@ -1,0 +1,65 @@
+.container {
+    & .comp-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_name {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .list-group {
+        flex-direction: row;
+        justify-content: space-around;
+
+        &-item {
+            width: 25%;
+            border: 0;
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+
+    & .countries-list {
+        & .col-sm-6 {
+            margin-bottom: 20px;
+        }
+
+        & .card {
+            border: 1px solid #3e3e3e;
+
+            &-body {
+                display: flex;
+                align-items: center;
+
+                &_wrap {
+                    margin-left: 36px;
+                }
+
+                img {
+                    width: 128px;
+                    height: 97px;
+                }
+            }
+        }
+
+        @media (max-width: 390px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.footer {
+    p {
+        font-weight: 500;
+    }
+
+    &-copyright {
+        margin-top: 20px;
+    }
+
+}

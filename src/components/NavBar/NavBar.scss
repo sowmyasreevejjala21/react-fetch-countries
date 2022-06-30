@@ -1,0 +1,38 @@
+.navbar {
+    & nav ul li {
+        display: inline-block;
+        margin: 1.5vw;
+      & a {
+        text-decoration: none;
+        color: #3e3e3e;
+
+        :hover {
+            border-bottom: 1px solid #3e3e3e;
+        }
+      }   
+    }
+    & .mobile-navigation {
+        display: none;
+        @media (max-width: 390px) {
+            display: flex;
+            align-items: center;
+            ul {
+                margin-right: 4rem;
+            }
+
+            &_hamburger {
+                position:absolute;
+                right: 5%;
+            }
+
+        }
+    }
+
+    @media (max-width: 390px) {
+        .navigation {
+            display: none;
+        }
+    }
+
+    
+}
